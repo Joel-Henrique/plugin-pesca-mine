@@ -1,0 +1,246 @@
+#     ___ _     _
+#    / __(_)___| |__  ___
+#   / _\ | / __| '_ \/ __|
+#  / /   | \__ \ | | \__ \
+#  \/    |_|___/_| |_|___/
+#
+# Peixes disponíveis para pesca.
+
+fishs:
+
+  tiny_fish:
+    level: 1
+    display-name: 'Lambari L.1'
+    rarities:
+      - '50.0,very_common'
+    base-prices:
+      cost1:
+        type: 'Money'
+        price: 10.0
+      cost2:
+        type: 'PlayerPoints'
+        price: 5
+    weight-prices:
+      cost1:
+        type: 'Money'
+        price: 10
+      cost2:
+        type: 'PlayerPoints'
+        price: 5
+    weight:
+      min: 1
+      max: 7
+    coin:
+      min: 1
+      max: 2
+    mcmmo:
+      min: 1
+      max: 2
+    display-sell:
+      material: 'RAW_FISH:0'
+      name: '&aLambari &7[&fL.1]'
+      lore:
+        - ''
+        - ' &7Nível: &f{level}'
+        - ' &7Raridade: &f{rarity} &8(+{rarity_price} coins) (+{rarity_price_PlayerPoints} pontos)'
+        - ' &7Peso: &f{weight} &8(+{weight_price} coins) (+{weight_price_PlayerPoints} pontos)'
+        - ' &7Quantia: &f{amount}'
+        - ''
+        - ' &7Preço unitário: &f5'
+        - ' &fSeu bônus: &b{bonus}%'
+        - ''
+        - ' &7Preço total (somado bônus, peso e raridade):'
+        - '  &f->&a {total_price} coins, {total_price_PlayerPoints} pontos'
+        - ''
+        - '&aClique para vender'
+    display:
+      material: 'FISH:0'
+      name: '&aLambari &7[&fL.1]'
+      lore:
+        - ''
+        - ' &7Pesos: &f0.5 à 2 gramas'
+        - ' &7Raridades: &fVery Common'
+        - ' &7Preço unitário: &f5'
+        - ''
+
+
+  normal:
+    # Nível necessário da vara de pesca
+    level: 5
+    display-name: 'Tilapia L.2'
+    # Raridades do peixe
+    # Definida na rarities.yml
+    # chance,raridade
+    rarities:
+      - '100.0,normal'
+    # Preços base de venda do peixe
+    base-prices:
+      cost1:
+        type: 'Money'
+        price: 20.0
+      cost2:
+        type: 'PlayerPoints'
+        price: 10.0
+    # Preços por peso do peixe (será somado ao preço base)
+    weight-prices:
+      cost1:
+        type: 'Money'
+        price: 10
+      cost2:
+        type: 'PlayerPoints'
+        price: 5
+    # Peso mínimo e máximo do peixe
+    weight:
+      min: 10
+      max: 20
+    # Quantia mínima e máxima que pode ganhar de Moedas de evolução ao pescar um peixe
+    coin:
+      min: 2
+      max: 4
+    # Quantia mínima e máxima que pode ganhar de XP do MCMMO ao pescar um peixe
+    mcmmo:
+      min: 2
+      max: 4
+    # Item do peixe no menu de venda
+    display-sell:
+      material: 'RAW_FISH:1'
+      name: '&aTilapia &7[&fL.1]'
+      lore:
+        - ''
+        - ' &7Nível: &f{level}'
+        - ' &7Raridade: &f{rarity} &8(+{rarity_price} coins) (+{rarity_price_PlayerPoints} pontos)'
+        - ' &7Peso: &f{weight} &8(+{weight_price} coins) (+{weight_price_PlayerPoints} pontos)'
+        - ' &7Quantia: &f{amount}'
+        - ''
+        - ' &7Preço unitário: &f10'
+        - ' &fSeu bônus: &b{bonus}%'
+        - ''
+        - ' &7Preço total (somado bônus, peso e raridade):'
+        - '  &f->&a {total_price} coins, {total_price_PlayerPoints} pontos'
+        - ''
+        - '&aClique para vender'
+    # Item do peixe no menu de preview
+    display:
+      material: 'FISH:1'
+      name: '&aTilapia &7[&fL.1]'
+      lore:
+        - ''
+        - ' &7Pesos: &f1 à 10 gramas'
+        - ' &7Raridades: &fNormal'
+        - ' &7Preço unitário: &f10'
+        - ''
+
+
+  huge_fish:
+    level: 10
+    display-name: 'Pacu L.3'
+    rarities:
+      - '10.0,very_rare'
+    base-prices:
+      cost1:
+        type: 'Money'
+        price: 50.0
+      cost2:
+        type: 'PlayerPoints'
+        price: 25.0
+    weight-prices:
+      cost1:
+        type: 'Money'
+        price: 10
+      cost2:
+        type: 'PlayerPoints'
+        price: 5
+    weight:
+      min: 20
+      max: 30
+    coin:
+      min: 5
+      max: 10
+    mcmmo:
+      min: 5
+      max: 10
+    display-sell:
+      material: 'RAW_FISH:2'
+      name: '&aPacu &7[&fL.3]'
+      lore:
+        - ''
+        - ' &7Nível: &f{level}'
+        - ' &7Raridade: &f{rarity} &8(+{rarity_price} coins) (+{rarity_price_PlayerPoints} pontos)'
+        - ' &7Peso: &f{weight} &8(+{weight_price} coins) (+{weight_price_PlayerPoints} pontos)'
+        - ' &7Quantia: &f{amount}'
+        - ''
+        - ' &7Preço unitário: &f50'
+        - ' &fSeu bônus: &b{bonus}%'
+        - ''
+        - ' &7Preço total (somado bônus, peso e raridade):'
+        - '  &f->&a {total_price} coins, {total_price_PlayerPoints} pontos'
+        - ''
+        - '&aClique para vender'
+    display:
+      material: 'FISH:2'
+      name: '&aPacu &7[&fL.3]'
+      lore:
+        - ''
+        - ' &7Pesos: &f20 à 50 gramas'
+        - ' &7Raridades: &fVery Rare'
+        - ' &7Preço unitário: &f50'
+        - ''
+
+rarities:
+  normal:
+    # Valores bônus que o peixe irá dar na venda
+    bonus-prices:
+      cost1:
+        type: 'Money'
+        price: 7.0
+      cost2:
+        type: 'PlayerPoints'
+        price: 4.0
+    # Pode utilizar cor
+    display: 'Normal'
+    # Mensagens que serão enviadas (ao jogador)
+    messages:
+      title: ''
+      actionbar: '&aVocê pescou um peixe de raridade normal'
+      chat: ''
+    # Mensagens que serão enviadas (ao jogador)
+    broadcast-messages:
+      title: ''
+      actionbar: '' #'&a{player} pescou um peixe de raridade normal'
+      chat: ''
+
+  very_common:
+    bonus-prices:
+      cost1:
+        type: 'Money'
+        price: 5.0
+      cost2:
+        type: 'PlayerPoints'
+        price: 2.0
+    display: 'Very Common'
+    messages:
+      title: ''
+      actionbar: '&aVocê pescou um peixe de raridade muito comum'
+      chat: ''
+    broadcast-messages:
+      title: ''
+      actionbar: ''
+      chat: ''
+
+  very_rare:
+    bonus-prices:
+      cost1:
+        type: 'Money'
+        price: 9.0
+      cost2:
+        type: 'PlayerPoints'
+        price: 5.0
+    display: 'Very Rare'
+    messages:
+      title: ''
+      actionbar: '&aVocê pescou um peixe de raridade muito rara'
+      chat: ''
+    broadcast-messages:
+      title: ''
+      actionbar: ''
+      chat: ''
