@@ -83,7 +83,7 @@ rods:
     delay: 10
     break-heavy: true
     # Preço em coin (moeda do plugin) para reparar a vara
-    repair-coin-cost: 5000
+    repair-coin-cost: 500
     repair-cost:
       cost1:
         type: 'Money'
@@ -138,7 +138,7 @@ rods:
     delay: 10
     break-heavy: true
     # Preço em coin (moeda do plugin) para reparar a vara
-    repair-coin-cost: 10
+    repair-coin-cost: 100
     repair-cost:
       cost1:
         type: 'Money'
@@ -149,7 +149,7 @@ rods:
         type: 'Money'
         cost: 5000.0
         display: 'Money'
-    coin-cost: 2000
+    coin-cost: 2000         #preço em coral
     rewards:
       - '20.0,Reco1'
       - '1.0,Reco2'

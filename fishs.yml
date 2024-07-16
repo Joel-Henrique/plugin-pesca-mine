@@ -84,7 +84,7 @@ fishs:
     # Preços por peso do peixe (será somado ao preço base)
     weight-prices:
       cost1:
-        type: 'Money'
+        type: 'Money'           #multiplicador por peso 20 * 10 = 200
         price: 10
       cost2:
         type: 'PlayerPoints'
