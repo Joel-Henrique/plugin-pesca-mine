@@ -12,7 +12,7 @@ enchantments:
     display: 'Multiplicador'
     default: 0.0
     maximum: 10.0 # Use -1 para ser infinito
-    multiplier: 0.01 # multiplicador adquirido por nível
+    multiplier: 10.0 # multiplicador adquirido por nível
     price:
       default: 200.0
       per-level: 400.0

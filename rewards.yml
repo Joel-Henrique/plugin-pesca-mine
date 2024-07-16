@@ -27,7 +27,9 @@ rewards:
     command:
       use: false
       list: [ 'give {player} stone 1' ]
-  Reco3:
+
+
+  Reco3:  #não implementado
     item:
       material: COOKED_FISH
       name: ''
