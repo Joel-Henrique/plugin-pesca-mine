@@ -22,7 +22,7 @@ rods:
     supported-weight: 10
     # Delay para pescar
     # em segundos
-    delay: 10
+    delay: 15
     # Quebrar a vara caso pesque um peixe mais pesado que o suportado
     break-heavy: false
     # Preço em coin (moeda do plugin) para reparar a vara
@@ -35,7 +35,7 @@ rods:
         display: 'Money'
     # Preço para upar para este nível
     upgrade-cost: {}
-    # Preço em coin (moeda do plugin) para upar para este nível
+    # Preço em coral (moeda do plugin) para upar para este nível
     coin-cost: 0
     # Recompensas que podem ser dadas ao conseguir pescar um peixe
     # Definida na rewards.yml
