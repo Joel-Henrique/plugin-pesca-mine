@@ -12,7 +12,9 @@ fishs:
     level: 1
     display-name: 'Lambari L.1'
     rarities:
-      - '50.0,very_common'
+      - '50.0,comum'
+      - '40.0,raro'
+      - '10.0,epico'
     base-prices:
       cost1:
         type: 'Money'
@@ -23,7 +25,7 @@ fishs:
     weight-prices:
       cost1:
         type: 'Money'
-        price: 10
+        price: 10                                    #preço por kilo
       cost2:
         type: 'PlayerPoints'
         price: 5
@@ -59,7 +61,7 @@ fishs:
       lore:
         - ''
         - ' &7Pesos: &f0.5 à 2 gramas'
-        - ' &7Raridades: &fVery Common'
+        - ' &7Raridades: &Common'
         - ' &7Preço unitário: &f5'
         - ''
 
@@ -72,7 +74,9 @@ fishs:
     # Definida na rarities.yml
     # chance,raridade
     rarities:
-      - '100.0,normal'
+      - '50.0,comum'
+      - '40.0,raro'
+      - '10.0,epico'
     # Preços base de venda do peixe
     base-prices:
       cost1:
@@ -135,7 +139,9 @@ fishs:
     level: 10
     display-name: 'Pacu L.3'
     rarities:
-      - '10.0,very_rare'
+      - '50.0,comum'
+      - '40.0,raro'
+      - '10.0,epico'
     base-prices:
       cost1:
         type: 'Money'
@@ -187,7 +193,7 @@ fishs:
         - ''
 
 rarities:
-  normal:
+  comum:
     # Valores bônus que o peixe irá dar na venda
     bonus-prices:
       cost1:
@@ -209,7 +215,7 @@ rarities:
       actionbar: '' #'&a{player} pescou um peixe de raridade normal'
       chat: ''
 
-  very_common:
+  raro:
     bonus-prices:
       cost1:
         type: 'Money'
@@ -227,7 +233,7 @@ rarities:
       actionbar: ''
       chat: ''
 
-  very_rare:
+  epico:
     bonus-prices:
       cost1:
         type: 'Money'
