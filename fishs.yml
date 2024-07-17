@@ -74,33 +74,27 @@ fishs:
     # Definida na rarities.yml
     # chance,raridade
     rarities:
-      - '50.0,comum'
-      - '40.0,raro'
+      - '60.0,comum'
+      - '30.0,raro'
       - '10.0,epico'
     # Preços base de venda do peixe
     base-prices:
       cost1:
         type: 'Money'
         price: 25.0                              # 25 + 200 + 7 = 232
-      cost2:
-        type: 'PlayerPoints'
-        price: 10.0
     # Preços por peso do peixe (será somado ao preço base)
     weight-prices:
       cost1:
         type: 'Money'           #multiplicador por peso 20 * 10 = 200
         price: 10
-      cost2:
-        type: 'PlayerPoints'
-        price: 5
     # Peso mínimo e máximo do peixe
     weight:
       min: 10
       max: 20
     # Quantia mínima e máxima que pode ganhar de Moedas de evolução ao pescar um peixe
     coin:
-      min: 2
-      max: 4
+      min: 4
+      max: 5
     # Quantia mínima e máxima que pode ganhar de XP do MCMMO ao pescar um peixe
     mcmmo:
       min: 2
@@ -146,22 +140,67 @@ fishs:
       cost1:
         type: 'Money'
         price: 50.0     #preço normal sem peso  # 50 + 300 + 9 = 359
-      cost2:
-        type: 'PlayerPoints'
-        price: 25.0
     weight-prices:
       cost1:
         type: 'Money'
         price: 10       #preço por peso
-      cost2:
-        type: 'PlayerPoints'
-        price: 5
     weight:
       min: 20
       max: 30
     coin:
+      min: 10
+      max: 14
+    mcmmo:
       min: 5
       max: 10
+    display-sell:
+      material: 'RAW_FISH:2'
+      name: '&aPacu &7[&fL.3]'
+      lore:
+        - ''
+        - ' &7Nível: &f{level}'
+        - ' &7Raridade: &f{rarity} &8(+{rarity_price} coins) (+{rarity_price_PlayerPoints} pontos)'
+        - ' &7Peso: &f{weight} &8(+{weight_price} coins) (+{weight_price_PlayerPoints} pontos)'
+        - ' &7Quantia: &f{amount}'
+        - ''
+        - ' &7Preço unitário: &f50'
+        - ' &fSeu bônus: &b{bonus}%'
+        - ''
+        - ' &7Preço total (somado bônus, peso e raridade):'
+        - '  &f->&a {total_price} coins, {total_price_PlayerPoints} pontos'
+        - ''
+        - '&aClique para vender'
+    display:
+      material: 'FISH:2'
+      name: '&aPacu &7[&fL.3]'
+      lore:
+        - ''
+        - ' &7Pesos: &f20 à 50 gramas'
+        - ' &7Raridades: &fÉpico'
+        - ' &7Preço unitário: &f50'
+        - ''
+
+  giant_fish:
+    level: 10
+    display-name: 'Pacu L.3'
+    rarities:
+      - '50.0,comum'
+      - '40.0,raro'
+      - '10.0,epico'
+    base-prices:
+      cost1:
+        type: 'Money'
+        price: 50.0     #preço normal sem peso  # 50 + 300 + 9 = 359
+    weight-prices:
+      cost1:
+        type: 'Money'
+        price: 10       #preço por peso
+    weight:
+      min: 20
+      max: 30
+    coin:
+      min: 10
+      max: 14
     mcmmo:
       min: 5
       max: 10
@@ -199,9 +238,6 @@ rarities:
       cost1:
         type: 'Money'
         price: 5.0
-      cost2:
-        type: 'PlayerPoints'
-        price: 4.0
     # Pode utilizar cor
     display: 'Comum'
     # Mensagens que serão enviadas (ao jogador)
@@ -220,9 +256,6 @@ rarities:
       cost1:
         type: 'Money'
         price: 7.0
-      cost2:
-        type: 'PlayerPoints'
-        price: 2.0
     display: 'Raro'
     messages:
       title: ''
@@ -238,9 +271,6 @@ rarities:
       cost1:
         type: 'Money'
         price: 9.0
-      cost2:
-        type: 'PlayerPoints'
-        price: 5.0
     display: 'Épico'
     messages:
       title: ''

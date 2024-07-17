@@ -6,6 +6,13 @@
 #
 # Configurações das varas de pesca.
 
+
+# MÉDIA DE GANHO DE COIN POR PEIXE DEVE SUBIR 2 A CADA PEIXE
+# O TEMPO PARA CONSEGUIR A PROXIMA VARA É PREMEDITADO E A MÉDIA DE COIN DE CADA VARA DEVE SE BASEAR NESSES TEMPOS EM SEGUNDO(EX= 1D É IGUAL A 86400 QUE DEVE SER DIVIDIDO PELO DELAY DA PESCA (15) E DEPOIS MULTIPLICADO PELA MÉDIA DA VARA PARA ESCOLHER O PREÇO)
+# TEMPOS ESCOLHIDOS PARA CONSEGUIR A PROX VARA = 3HR 1DIA 3DIAS 1SEM 2SEM 1MES
+# Exemplo para comprar a vara lvl 5 - 3hrs = 10800segundos 10800/15 = 720 x 1,5(média de coin da primeira vara) = 1080 Preço da prox vara
+
+
 # Item para quando o jogador não possui uma vara
 default:
   material: 'BARRIER:0'
@@ -14,7 +21,7 @@ default:
     - '&7Clique para abrir o menu de compra'
 
 rods:
-  basic:
+  comum:
     # Nível da vara
     # Padrão: 1
     level: 1
@@ -45,7 +52,7 @@ rods:
       - '0.3,Reco2'
     # Nome e lore da vara
     rod:
-      name: '&bVara Curta &f[L.{level}]'
+      name: '&bVara Comum &f[L.{level}]'
       lore:
         - '&7Inquebrável ∞'
         - '{enchants}'
@@ -59,7 +66,7 @@ rods:
       items:
         upgrade:
           material: FISHING_ROD
-          name: '&bVara média &f[L.{level}]'
+          name: '&bVara de Ferro &f[L.{level}]'
           lore:
             - ''
             - '&a* Vara de pesca &fLVL {level}'
@@ -70,20 +77,20 @@ rods:
             - '&aClique para dar upgrade'
         has:
           material: FISHING_ROD
-          name: '&bVara Curta &f[L.{level}]'
+          name: '&bVara Comum &f[L.{level}]'
           lore:
             - ''
             - '&a* Vara de pesca &fLVL {level}'
             - '&a* Peso suportado: &f{weight} gramas'
             - ''
             - '&cVocê já possui uma vara igual ou melhor que esta.'
-  medium:
+  ferro:
     level: 5
     supported-weight: 20
-    delay: 10
-    break-heavy: true
+    delay: 15
+    break-heavy: false
     # Preço em coin (moeda do plugin) para reparar a vara
-    repair-coin-cost: 500
+    repair-coin-cost: 0
     repair-cost:
       cost1:
         type: 'Money'
@@ -94,12 +101,12 @@ rods:
         type: 'Money'
         cost: 2500.0
         display: 'Money'
-    coin-cost: 1000    #preço em coral
+    coin-cost: 1080    #preço em coral
     rewards:
       - '20.0,Reco1'
       - '0.5,Reco2'
     rod:
-      name: '&bVara média &f[L.{level}]'
+      name: '&bVara de Ferro &f[L.{level}]'
       lore:
         - '&7Inquebrável ∞'
         - '{enchants}'
@@ -113,10 +120,10 @@ rods:
       items:
         upgrade:
           material: FISHING_ROD
-          name: '&bVara Grande &f[L.{level}]'
+          name: '&bVara Ouro &f[L.{level}]'
           lore:
             - ''
-            - '&a* Vara de pesca &fLVL {level}'
+            - '&a* Vara de Ouro &fLVL {level}'
             - '&a* Peso suportado: &f{weight} gramas'
             - ''
             - '&fPreço: &7Grátis'
@@ -124,7 +131,7 @@ rods:
             - '&aClique para dar upgrade'
         has:
           material: FISHING_ROD
-          name: '&bVara de pesca &f[L.{level}]'
+          name: '&bVara de Ferro &f[L.{level}]'
           lore:
             - ''
             - '&a* Vara de pesca &fLVL {level}'
@@ -132,13 +139,13 @@ rods:
             - ''
             - '&cVocê já possui uma vara igual ou melhor que esta.'
 
-  Grande:
+  ouro:
     level: 10
     supported-weight: 30
-    delay: 10
-    break-heavy: true
+    delay: 15
+    break-heavy: false
     # Preço em coin (moeda do plugin) para reparar a vara
-    repair-coin-cost: 100
+    repair-coin-cost: 0
     repair-cost:
       cost1:
         type: 'Money'
@@ -149,7 +156,7 @@ rods:
         type: 'Money'
         cost: 5000.0
         display: 'Money'
-    coin-cost: 2000         #preço em coral
+    coin-cost: 34560         #preço em coral
     rewards:
       - '20.0,Reco1'
       - '1.0,Reco2'
@@ -187,3 +194,61 @@ rods:
             - '&a* Peso suportado: &f{weight} gramas'
             - ''
             - '&cVocê já possui uma vara igual ou melhor que esta.'
+
+esmeralda:
+    level: 20
+    supported-weight: 30
+    delay: 15
+    break-heavy: false
+    # Preço em coin (moeda do plugin) para reparar a vara
+    repair-coin-cost: 0
+    repair-cost:
+      cost1:
+        type: 'Money'
+        cost: 10000.0
+        display: 'Money'
+    upgrade-cost:
+      cost1:
+        type: 'Money'
+        cost: 5000.0
+        display: 'Money'
+    coin-cost: 138240         #preço em coral
+    rewards:
+      - '20.0,Reco1'
+      - '1.0,Reco2'
+    rod:
+      name: '&bVara média &f[L.{level}]'
+      lore:
+        - '&7Inquebrável ∞'
+        - '{enchants}'
+        - '&e Shift+Esquerdo para abrir o Menu'
+        - '&a* Vara de pesca &fLVL {level}'
+        - '&a* Peso suportado: &f{weight} gramas'
+        - ''
+        - '&a* &fCorais: &7{coin_has}/{coin_next} &f({progressbar}&f)'
+    shop:
+      priority: 1
+      items:
+        upgrade:
+          material: FISHING_ROD
+          name: '&bVara de pesca &f[L.{level}]'
+          lore:
+            - ''
+            - '&a* Vara de pesca &fLVL {level}'
+            - '&a* Peso suportado: &f{weight} gramas'
+            - ''
+            - '&fPreço em corais: &b{coin} corais'
+            - '&fPreço: &a{Money} coins'
+            - ''
+            - '&aClique para dar upgrade'
+        has:
+          material: FISHING_ROD
+          name: '&bVara de pesca &f[L.{level}]'
+          lore:
+            - ''
+            - '&a* Vara de pesca &fLVL {level}'
+            - '&a* Peso suportado: &f{weight} gramas'
+            - ''
+            - '&cVocê já possui uma vara igual ou melhor que esta.'
+
+
