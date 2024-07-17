@@ -130,7 +130,7 @@ fishs:
       lore:
         - ''
         - ' &7Pesos: &f1 à 10 gramas'
-        - ' &7Raridades: &fNormal'
+        - ' &7Raridades: &fComum'
         - ' &7Preço unitário: &f10'
         - ''
 
@@ -188,7 +188,7 @@ fishs:
       lore:
         - ''
         - ' &7Pesos: &f20 à 50 gramas'
-        - ' &7Raridades: &fVery Rare'
+        - ' &7Raridades: &fÉpico'
         - ' &7Preço unitário: &f50'
         - ''
 
@@ -198,16 +198,16 @@ rarities:
     bonus-prices:
       cost1:
         type: 'Money'
-        price: 7.0
+        price: 5.0
       cost2:
         type: 'PlayerPoints'
         price: 4.0
     # Pode utilizar cor
-    display: 'Normal'
+    display: 'Comum'
     # Mensagens que serão enviadas (ao jogador)
     messages:
       title: ''
-      actionbar: '&aVocê pescou um peixe de raridade normal'
+      actionbar: '&aVocê pescou um peixe de raridade comum'
       chat: ''
     # Mensagens que serão enviadas (ao jogador)
     broadcast-messages:
@@ -219,14 +219,14 @@ rarities:
     bonus-prices:
       cost1:
         type: 'Money'
-        price: 5.0
+        price: 7.0
       cost2:
         type: 'PlayerPoints'
         price: 2.0
-    display: 'Very Common'
+    display: 'Raro'
     messages:
       title: ''
-      actionbar: '&aVocê pescou um peixe de raridade muito comum'
+      actionbar: '&aVocê pescou um peixe de raridade raro'
       chat: ''
     broadcast-messages:
       title: ''
@@ -241,10 +241,10 @@ rarities:
       cost2:
         type: 'PlayerPoints'
         price: 5.0
-    display: 'Very Rare'
+    display: 'Épico'
     messages:
       title: ''
-      actionbar: '&aVocê pescou um peixe de raridade muito rara'
+      actionbar: '&aVocê pescou um peixe de raridade épico'
       chat: ''
     broadcast-messages:
       title: ''
