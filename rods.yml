@@ -161,7 +161,7 @@ rods:
       - '20.0,Reco1'
       - '1.0,Reco2'
     rod:
-      name: '&bVara média &f[L.{level}]'
+      name: '&bVara De Ouro &f[L.{level}]'
       lore:
         - '&7Inquebrável ∞'
         - '{enchants}'
@@ -175,7 +175,7 @@ rods:
       items:
         upgrade:
           material: FISHING_ROD
-          name: '&bVara de pesca &f[L.{level}]'
+          name: '&bVara de Ouro &f[L.{level}]'
           lore:
             - ''
             - '&a* Vara de pesca &fLVL {level}'
@@ -187,7 +187,7 @@ rods:
             - '&aClique para dar upgrade'
         has:
           material: FISHING_ROD
-          name: '&bVara de pesca &f[L.{level}]'
+          name: '&bVara de Ferro &f[L.{level}]'
           lore:
             - ''
             - '&a* Vara de pesca &fLVL {level}'
@@ -217,7 +217,7 @@ esmeralda:
       - '20.0,Reco1'
       - '1.0,Reco2'
     rod:
-      name: '&bVara média &f[L.{level}]'
+      name: '&bVara de Esmeralda &f[L.{level}]'
       lore:
         - '&7Inquebrável ∞'
         - '{enchants}'
@@ -231,7 +231,7 @@ esmeralda:
       items:
         upgrade:
           material: FISHING_ROD
-          name: '&bVara de pesca &f[L.{level}]'
+          name: '&bVara de Esmeralda &f[L.{level}]'
           lore:
             - ''
             - '&a* Vara de pesca &fLVL {level}'

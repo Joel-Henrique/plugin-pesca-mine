@@ -19,16 +19,10 @@ fishs:
       cost1:
         type: 'Money'
         price: 10.0                                   # 10 + 100 + 5 = 115
-      cost2:
-        type: 'PlayerPoints'
-        price: 5
     weight-prices:
       cost1:
         type: 'Money'
         price: 10                                    #preço por kilo
-      cost2:
-        type: 'PlayerPoints'
-        price: 5
     weight:
       min: 1
       max: 7
