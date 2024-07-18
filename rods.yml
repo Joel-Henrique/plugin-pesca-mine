@@ -10,7 +10,7 @@
 # MÉDIA DE GANHO DE COIN POR PEIXE DEVE SUBIR 2 A CADA PEIXE
 # O TEMPO PARA CONSEGUIR A PROXIMA VARA É PREMEDITADO E A MÉDIA DE COIN DE CADA VARA DEVE SE BASEAR NESSES TEMPOS EM SEGUNDO(EX= 1D É IGUAL A 86400 QUE DEVE SER DIVIDIDO PELO DELAY DA PESCA (15) E DEPOIS MULTIPLICADO PELA MÉDIA DA VARA PARA ESCOLHER O PREÇO)
 # TEMPOS ESCOLHIDOS PARA CONSEGUIR A PROX VARA = 3HR 1DIA 3DIAS 1SEM 2SEM 1MES
-# Exemplo para comprar a vara lvl 5 - 3hrs = 10800segundos 10800/15 = 720 x 1,5(média de coin da primeira vara) = 1080 Preço da prox vara
+# Exemplo para comprar a vara lvl 5 - 3hrs = 10800segundos 10800/15 = 720 x 1,5(média de coin da primeira vara) = 1080 Preço da proxa vara
 
 
 # Item para quando o jogador não possui uma vara
